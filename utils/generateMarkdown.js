@@ -84,8 +84,8 @@
     - [Contributions](#contributions)
     - [Testing](#testing)
     - [Contact](#contact)
-    ## Download
-    ${data.download}
+    ## Installation
+    ${data.installation}
     ## Usage
     ${data.usage}
     ${renderLicenseSection(data.license)}
@@ -95,7 +95,7 @@
     ${data.testing}
     ## Contact
     Check out my GitHub profile!
-    [${data.github_username}](https://github.com/${data.github_username})
+    [${data.github}](https://github.com/${data.github})
     Contact me via email @ ${data.email}
     This README was created by ${data.contributions} using the [ReadMe-Generator](https://github.com/jicard/Node-Readme-Generator-Challenge)
   `;
