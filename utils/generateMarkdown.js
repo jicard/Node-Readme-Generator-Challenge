@@ -74,30 +74,30 @@
   
   // TODO: Create a function to generate markdown for README
   function generateMarkdown(data) {
-    return ` 
-    # <${data.title}> 
-    ## <${renderLicenseBadge(data.license)}>
-    ## Contents
-    - [Description](#description)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Contributions](#contributions)
-    - [Testing](#testing)
-    - [Contact](#contact)
-    ## Installation
-    ${data.installation}
-    ## Usage
-    ${data.usage}
-    ${renderLicenseSection(data.license)}
-    ## Contributions
-    ${data.contributions}
-    ## Testing
-    ${data.testing}
-    ## Contact
-    Check out my GitHub profile!
-    [${data.github}](https://github.com/${data.github})
-    Contact me via email @ ${data.email}
-    ${data.contributions} using the [ReadMe-Generator](https://github.com/jicard/Node-Readme-Generator-Challenge)
-  `;
-  }
-  module.exports = generateMarkdown;
+return ` 
+# <${data.title}> 
+## <${renderLicenseBadge(data.license)}>
+## Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributions](#contributions)
+- [Testing](#testing)
+- [Contact](#contact)
+## Installation
+${data.installation}
+## Usage
+${data.usage}
+${renderLicenseSection(data.license)}
+## Contributions
+${data.contributions}
+## Testing
+${data.testing}
+## Contact
+Check out my GitHub profile!
+[${data.github}](https://github.com/${data.github})
+Contact me via email @ ${data.email}
+${data.contributions} using the [ReadMe-Generator](https://github.com/jicard/Node-Readme-Generator-Challenge)
+`;
+}
+module.exports = generateMarkdown;
