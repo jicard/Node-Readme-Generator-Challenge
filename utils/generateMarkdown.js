@@ -75,8 +75,8 @@
   // TODO: Create a function to generate markdown for README
   function generateMarkdown(data) {
     return ` 
-    # <header>${data.title}</header> 
-    ## ${renderLicenseBadge(data.license)}
+    # <${data.title}> 
+    ## <${renderLicenseBadge(data.license)}>
     ## Contents
     - [Description](#description)
     - [Installation](#installation)
