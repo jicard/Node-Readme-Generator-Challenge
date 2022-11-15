@@ -1,5 +1,5 @@
  
-# <header>test</header>
+# <header>Josh's README Generator</header>
 ## [![licBadge](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Contents
 - [Description](#description)
@@ -10,17 +10,17 @@
 - [Contact](#contact)
 - [Link](#link)
 ## Description
-test
+This project creates a README file with information from user input to given questions. 
 ## Installation
-test
+This project can be installed by downloaded the JavaScript files in the repo, then installing Node and the Inquirer package. 
 ## Usage
-test
+Developers will use this project to create a README for their project quickly and efficiently. 
 ## License
 [![licBadge](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) <br /> Application is backed by MIT license.
 ## Contributions
-test
+This project was created by Josh Icard. 
 ## Testing
-test
+You could test this project by running the "node index.js" command in the terminal, then answering the given questions. 
 ## Contact
 Check out my GitHub profile! [jicard](https://github.com/jicard)
 <br />
