@@ -75,8 +75,8 @@
   // TODO: Create a function to generate markdown for README
   function generateMarkdown(data) {
     return ` 
-    <header>${data.title}</header> 
-    ${renderLicenseBadge(data.license)}
+    # <header>${data.title}</header> 
+    ## ${renderLicenseBadge(data.license)}
     ## Contents
     - [Description](#description)
     - [Installation](#installation)
@@ -97,7 +97,7 @@
     Check out my GitHub profile!
     [${data.github}](https://github.com/${data.github})
     Contact me via email @ ${data.email}
-    This README was created by ${data.contributions} using the [ReadMe-Generator](https://github.com/jicard/Node-Readme-Generator-Challenge)
+    ${data.contributions} using the [ReadMe-Generator](https://github.com/jicard/Node-Readme-Generator-Challenge)
   `;
   }
   module.exports = generateMarkdown;
