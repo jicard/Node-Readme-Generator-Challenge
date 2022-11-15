@@ -1,7 +1,7 @@
 // Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-  function renderLicenseBadge(license) {
-    let licBadge = {
+function renderLicenseBadge(license) {
+  let licBadge = {
       'Apache 2.0': 
          '[![licBadge](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
       ,
@@ -21,26 +21,25 @@
          '[![licBadge](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
       ,
       'None': 
-         ''
-      
-    };
-    return licBadge[license];
-  }
+         ''    
+  };
+      return licBadge[license];
+}
   
-  // Create a function that returns the license link
-  // If there is no license, return an empty string
-  function renderLicenseLink(license) {
-    if (license !== 'None') {
-      return `\n* [License](#license)\n`;
-    }
-    return '';
+// Create a function that returns the license link
+// If there is no license, return an empty string
+function renderLicenseLink(license) {
+  if (license !== 'None') {
+    return `\n* [License](#license)\n`;
   }
+  return '';
+}
   
-  // Create a function that returns the license section of README
-  // If there is no license, return an empty string
+// Create a function that returns the license section of README
+// If there is no license, return an empty string
 function renderLicenseSection(license) {
   let section = {
-    'Apache 2.0': 
+'Apache 2.0': 
 `## License
 [![licBadge](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) <br /> Application is backed by ${license} license.`
 ,
@@ -71,8 +70,8 @@ return section[license];
 }
   
   
-  // TODO: Create a function to generate markdown for README
-  function generateMarkdown(data) {
+// TODO: Create a function to generate markdown for README
+function generateMarkdown(data) {
 return ` 
 # <header>${data.title}</header>
 ## ${renderLicenseBadge(data.license)}
@@ -84,6 +83,8 @@ return `
 - [Testing](#testing)
 - [Contact](#contact)
 - [Link](#link)
+## Description
+${data.description}
 ## Installation
 ${data.installation}
 ## Usage
@@ -94,12 +95,11 @@ ${data.contributions}
 ## Testing
 ${data.testing}
 ## Contact
-Check out my GitHub profile!
-[${data.github}](https://github.com/${data.github})
+Check out my GitHub profile! [${data.github}](https://github.com/${data.github})
+<br />
 Contact me via email @ ${data.email}
-${data.contributions}
 ## Link
-[ReadMe-Generator](https://github.com/jicard/Node-Readme-Generator-Challenge)
+[Josh's README Generator Repo](https://github.com/jicard/Node-Readme-Generator-Challenge)
 `;
 }
 module.exports = generateMarkdown;

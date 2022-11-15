@@ -9,6 +9,8 @@
 - [Testing](#testing)
 - [Contact](#contact)
 - [Link](#link)
+## Description
+test
 ## Installation
 test
 ## Usage
@@ -20,9 +22,8 @@ test
 ## Testing
 test
 ## Contact
-Check out my GitHub profile!
-[jicard](https://github.com/jicard)
+Check out my GitHub profile! [jicard](https://github.com/jicard)
+<br />
 Contact me via email @ icardj@outlook.com
-test
 ## Link
-[ReadMe-Generator](https://github.com/jicard/Node-Readme-Generator-Challenge)
+[Josh's README Generator Repo](https://github.com/jicard/Node-Readme-Generator-Challenge)

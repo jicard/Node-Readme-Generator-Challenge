@@ -14,7 +14,7 @@ const questions = [
     {
         type: "input",
         name: "description",
-        message: "Write a summary of how the project functions.",
+        message: "Write does this project do?",
     },
     {
         type: "input",
@@ -24,7 +24,7 @@ const questions = [
     {
         type: "input",
         name: "usage",
-        message: "What will this project be used for?",
+        message: "Who will use this project, and what will they accomplish with it?",
     },
     {
         type: "input",
@@ -34,12 +34,12 @@ const questions = [
     {
         type: "input",
         name: "testing",
-        message: "How do you test your project?",
+        message: "How would you test your project?",
     },
     {
         type: "list",
         name: "license",
-        message: "What license does your project abide by?",
+        message: "What license is your project backed by?",
         choices: ["MIT", "CC", "Apache-2.0", "BSL-1.0", "ISC", "Mozilla 2.0", "None"]
     },
     {
