@@ -5,7 +5,7 @@
       'Apache 2.0': 
          '[![licBadge](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
       ,
-      'bsl-1.0': 
+      'BSL-1.0': 
          '[![licBadge](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)'
       ,
       'CC': 
@@ -61,7 +61,7 @@
         [![licBadge](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) <br /> Application is backed by ${license} license.`
       ,
       'Mozilla 2.0': 
-         `# License
+         `## License
         [![licBadge](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) <br /> Application is backed by ${license} license.`
       ,
       'None': 
@@ -75,11 +75,11 @@
   // TODO: Create a function to generate markdown for README
   function generateMarkdown(data) {
     return ` 
-    <header>${data.name}</header> 
+    <header>${data.title}</header> 
     ${renderLicenseBadge(data.license)}
     ## Contents
-    - [Summary](#summary)
-    - [Download](#download)
+    - [Description](#description)
+    - [Installation](#installation)
     - [Usage](#usage)
     - [Contributions](#contributions)
     - [Testing](#testing)
@@ -94,10 +94,10 @@
     ## Testing
     ${data.testing}
     ## Contact
-    I can be reached on my Github profile or by email
-    My GitHub profile: [${data.github_username}](https://github.com/${data.github_username})
-    I can be contacted by email at: ${data.email}
-    README was created by ${data.contributions} using the [ReadMe-Generator](https://github.com/Titoxox97/ReadMe-Generator)
+    Check out my GitHub profile!
+    [${data.github_username}](https://github.com/${data.github_username})
+    Contact me via email @ ${data.email}
+    This README was created by ${data.contributions} using the [ReadMe-Generator](https://github.com/jicard/Node-Readme-Generator-Challenge)
   `;
   }
   module.exports = generateMarkdown;
